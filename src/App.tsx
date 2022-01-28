@@ -1,9 +1,9 @@
-import SearchBar from "./core/components/SearchBar";
+import TopHeader from "./core/components/TopHeader";
 
 function App() {
   return (
     <div className="App">
-      <SearchBar/>
+      <TopHeader/>
     </div>
   );
 }
