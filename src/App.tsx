@@ -1,9 +1,11 @@
+import Articles from "./core/components/Articles";
 import TopHeader from "./core/components/TopHeader";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <TopHeader/>
+      <TopHeader />
+      <Articles />
     </div>
   );
 }
