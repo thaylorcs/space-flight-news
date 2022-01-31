@@ -1,0 +1,33 @@
+.article-odd, .article-even {
+    display: flex;
+    margin: 3% auto;
+}
+
+.article-text {
+    margin: 1% auto;
+}
+
+.article-img {
+    height: 16rem;
+    object-fit: cover;
+    margin: 0 auto;
+    max-width: 16rem;
+}
+
+.article-even {
+    flex-direction: row-reverse;
+}
+
+.date-source {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-date {
+    margin: 0;
+}
+
+.btn-source {
+    margin-right: 2%;
+}

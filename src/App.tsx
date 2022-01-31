@@ -1,5 +1,6 @@
-import Articles from "./core/components/Articles";
+import Articles from "./Pages/Articles";
 import TopHeader from "./core/components/TopHeader";
+import './App.css';
 
 const App = () => {
   return (
