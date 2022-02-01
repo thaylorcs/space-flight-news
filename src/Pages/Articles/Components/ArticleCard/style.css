@@ -1,6 +1,24 @@
 .article-odd, .article-even {
+    border: 1px solid var(--white);
+    border-radius: 2px;
     display: flex;
-    margin: 3% auto;
+    flex: 1;
+    margin: 2% auto;
+    padding: 1%;
+    transition: .5s;
+    width: 70%;
+}
+
+.article-odd:hover, .article-even:hover {
+    background-color: var(--blue);
+    color: white;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.article-even {
+    flex-direction: row-reverse;
 }
 
 .article-text {
@@ -8,14 +26,15 @@
 }
 
 .article-img {
+    border-radius: 20px;
     height: 16rem;
     object-fit: cover;
     margin: 0 auto;
-    max-width: 16rem;
+    width: 16rem;
 }
 
-.article-even {
-    flex-direction: row-reverse;
+.article-odd .article-img {
+    margin-right: 2%;
 }
 
 .date-source {

@@ -3,7 +3,7 @@ import { IoRocketSharp } from 'react-icons/io5';
 
 const TopHeader = () => {
     return (
-        <header className='container'>
+        <header className='container-fluid top-header'>
             <div className="container top-filters">
                 <div className="form-group filters">
                     <input className='form-control' type="text" placeholder='Pesquisar' />
