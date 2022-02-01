@@ -1,26 +1,10 @@
-.top-filters {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 60%;
-    max-width: 40%;
-    padding-top: 2%;
-}
-
-.top-filters input {
-    margin-right: 20px;
-}
-
-.filters {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .topo-destaque {
     align-items: center;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 2%;
     text-align: center;
+    margin-top: 4%;
 }
 
 .topo {

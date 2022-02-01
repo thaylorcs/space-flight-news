@@ -1,0 +1,18 @@
+.top-filters {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 40%;
+    padding-top: 2%;
+}
+
+.top-filters select {
+    min-width: 4rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: flex-end;
+}
