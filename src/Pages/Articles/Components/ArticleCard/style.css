@@ -41,6 +41,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin: 2% auto;
 }
 
 .article-date {
@@ -48,5 +49,11 @@
 }
 
 .btn-source {
+    background-color: var(--black);
+    border: none;
     margin-right: 2%;
+}
+
+.btn-source:hover {
+    background-color: var(--orange);
 }
