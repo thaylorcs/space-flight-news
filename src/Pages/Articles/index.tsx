@@ -37,7 +37,6 @@ const Articles = () => {
     return (
         <>
             <Filters
-                order={order}
                 handleSortOrder={value => handleSortOrder(value)}
             />
             <main className='main-content container-fluid'>

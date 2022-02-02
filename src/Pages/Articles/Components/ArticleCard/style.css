@@ -1,19 +1,15 @@
 .article-odd, .article-even {
-    border: 1px solid var(--white);
-    border-radius: 2px;
     display: flex;
     flex: 1;
-    margin: 2% auto;
+    margin: 0.2rem auto;
     padding: 1%;
     transition: .5s;
     width: 70%;
 }
 
 .article-odd:hover, .article-even:hover {
-    background-color: var(--blue);
-    color: white;
-    border: 1px solid var(--blue);
-    border-radius: 10px;
+    background-color: var(--white);
+    color: #1E2022;
     padding: 1%;
 }
 
@@ -26,7 +22,6 @@
 }
 
 .article-img {
-    border-radius: 20px;
     height: 16rem;
     object-fit: cover;
     margin: 0 auto;
@@ -50,11 +45,20 @@
 }
 
 .btn-source {
-    background-color: var(--black);
+    background-color: var(--orange);
     border: none;
     margin-right: 2%;
 }
 
 .btn-source:hover {
+    background-color: var(--blue);
+}
+
+.btn-more {
+    background-color: var(--blue);
+    border: none;
+}
+
+.btn-more:hover {
     background-color: var(--orange);
 }

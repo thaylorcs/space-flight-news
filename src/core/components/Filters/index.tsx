@@ -2,14 +2,13 @@ import Select from 'react-select';
 import './style.css';
 
 type Props = {
-    order: string;
     handleSortOrder: (order: string) => void;
 }
 
-const Filters = ({ order, handleSortOrder }: Props) => {
+const Filters = ({ handleSortOrder }: Props) => {
 
     const sortOptions = [
-        { value: 'publishedAt', label: 'Mais antigas' },
+        { value: 'id', label: 'Mais antigas' },
         { value: '', label: 'Mais novas' },
     ];
 
@@ -17,6 +16,7 @@ const Filters = ({ order, handleSortOrder }: Props) => {
         <div className="container top-filters">
             <div className="form-group filters">
                 <Select
+                    classNamePrefix="filter-select"
                     placeholder={"Ordenar por"}
                     options={sortOptions}
                     defaultValue={{ label: "Mais novas", value: '' }}
