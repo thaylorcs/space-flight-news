@@ -9,10 +9,10 @@ type Props = {
 
 const ArticleCard = ({ article }: Props) => {
     const [articleDate, setArticleDate] = useState('');
-    const [visibleModal, setVisibleModal] = useState(false);
+    const [modalClass, setModalClass] = useState('d-none');
 
     const handleModal = () => {
-        setVisibleModal(!visibleModal);
+        setModalClass('');
         document.body.addEventListener("click", handleModal);
     }
 
@@ -45,7 +45,7 @@ const ArticleCard = ({ article }: Props) => {
                 title={article.title}
                 content={article.summary}
                 imageUrl={article.imageUrl}
-                visible={visibleModal}
+                className={modalClass}
                 date={articleDate}
                 url={article.url}
                 source={article.newsSite}

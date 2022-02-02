@@ -1,0 +1,22 @@
+.modal-article {
+    align-items: center;
+    background-color: rgba(110, 108, 108, 0.9);
+    color: var(--white);
+    display: flex;
+    height: 100%;
+    left: 0;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.modal-content {
+    border: none;
+    display: flex;
+    color: var(--black);
+    max-width: 65%;
+    min-width: 65%;
+    padding: 10px;
+}
