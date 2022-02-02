@@ -8,17 +8,19 @@ type Props = {
 
 const Filters = ({ order, handleSortOrder }: Props) => {
 
-    const sortType = [
-        { value: 'id', label: 'Mais antigas' },
-        { value: 'publishedAt', label: 'Mais novas' },
+    const sortOptions = [
+        { value: 'publishedAt', label: 'Mais antigas' },
+        { value: '', label: 'Mais novas' },
     ];
 
     return (
         <div className="container top-filters">
-            <div className="form-group filters invisible">
+            <div className="form-group filters">
                 <Select
-                    name="order"
                     placeholder={"Ordenar por"}
+                    options={sortOptions}
+                    defaultValue={{ label: "Mais novas", value: '' }}
+                    onChange={event => handleSortOrder(event!.value)}
                 />
             </div>
         </div>

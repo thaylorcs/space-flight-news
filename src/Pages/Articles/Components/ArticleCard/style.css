@@ -22,7 +22,7 @@
 }
 
 .article-text {
-    margin: 1% auto;
+    margin: 2%;
 }
 
 .article-img {
@@ -42,6 +42,7 @@
     display: flex;
     justify-content: space-between;
     margin: 2% auto;
+    width: 95%;
 }
 
 .article-date {
