@@ -18,13 +18,13 @@
 }
 
 .article-text {
-    margin: 2%;
+    margin: 0 2%;
 }
 
 .article-img {
-    height: 16rem;
-    object-fit: cover;
+    height: 98%;
     margin: 0 auto;
+    object-fit: cover;
     width: 16rem;
 }
 
@@ -61,4 +61,22 @@
 
 .btn-more:hover {
     background-color: var(--orange);
+}
+
+@media screen and (max-width: 768px) {
+    .article-odd, 
+    .article-even{
+        flex-direction: column;
+        width: 100%;
+    }
+    .article-odd .article-img,
+    .article-img {
+        align-self: center;
+        width: 100%;
+        margin:auto;
+    }
+.article-text {
+    margin: 0;
+}
+    
 }

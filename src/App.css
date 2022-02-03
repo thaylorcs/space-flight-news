@@ -19,3 +19,10 @@ body {
     background-color: var(--black);
     color: var(--white);
 }
+
+@media screen and (max-width: 425px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}

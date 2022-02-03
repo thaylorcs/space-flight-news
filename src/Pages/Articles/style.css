@@ -8,3 +8,9 @@
 .carregar-mais {
     margin: 2%;
 }
+
+@media screen and (max-width: 768px) {
+    .main-content svg {
+        width: 100%;
+    }
+}

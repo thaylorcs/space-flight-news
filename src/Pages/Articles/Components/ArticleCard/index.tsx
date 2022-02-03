@@ -27,7 +27,7 @@ const ArticleCard = ({ article }: Props) => {
     return (
         <>
             <article className={article.id % 2 === 0 ? "article-even" : "article-odd"} key={article.id}>
-                <div className="article-img">
+                <div className="">
                     <img className="article-img" src={article.imageUrl} alt={article.title} />
                 </div>
                 <div className="article-text" >
