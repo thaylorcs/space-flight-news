@@ -36,7 +36,7 @@ const ArticleCard = ({ article }: Props) => {
                         <a href={article.url} target="_blank" className="btn btn-primary btn-source" rel="noreferrer">{article.newsSite}</a>
                     </div>
                     <p className="article-content">{article.summary}</p>
-                    <button className="btn btn-primary btn-more" onClick={handleModal}>Ver mais</button>
+                    <button className="btn btn-primary btn-more" onClick={handleModal}>View More</button>
                 </div>
             </article>
             {modal === true ? <Modal
@@ -45,12 +45,9 @@ const ArticleCard = ({ article }: Props) => {
                 imageUrl={article.imageUrl}
                 date={articleDate}
                 url={article.url}
-                source={article.newsSite}
                 hide={() => setmodal(false)}
             /> : ''
             }
-
-
         </>
     )
 }

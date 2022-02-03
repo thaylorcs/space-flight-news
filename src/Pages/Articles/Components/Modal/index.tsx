@@ -6,11 +6,10 @@ type Props = {
     date: string,
     imageUrl: string,
     url: string,
-    source: string,
     hide: () => void
 }
 
-const Modal = ({ title, content, date, imageUrl, url, source, hide }: Props) => {
+const Modal = ({ title, content, date, imageUrl, url,  hide }: Props) => {
     return (
         <div className="modal modal-visible modal-hidden" >
             <div className="modal-dialog" role="document">
@@ -23,14 +22,13 @@ const Modal = ({ title, content, date, imageUrl, url, source, hide }: Props) => 
                             <h2 className="article-title">{title}</h2>
                             <div className="date-source">
                                 <p className='article-date'> {date}</p>
-                                <p className="btn btn-primary btn-source">{source}</p>
                             </div>
                             <p className="article-content">{content}</p>
                         </div>
                     </div>
                     <div className="modal-footer">
-                        <a href={url} target="_blank" className="btn btn-primary" rel="noreferrer">Ir para o site</a>
-                        <button type="button" className="btn btn-danger" onClick={hide}>Fechar</button>
+                        <a href={url} target="_blank" className="btn btn-more" rel="noreferrer">Go to Site</a>
+                        <button type="button" className="btn btn-source" onClick={hide}>Close</button>
                     </div>
                 </div>
             </div>

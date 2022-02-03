@@ -36,7 +36,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 2% auto;
+    margin: 1% 0;
     width: 95%;
 }
 
@@ -47,36 +47,44 @@
 .btn-source {
     background-color: var(--orange);
     border: none;
+    color: var(--white);
     margin-right: 2%;
 }
 
 .btn-source:hover {
     background-color: var(--blue);
+    color: var(--white);
 }
 
 .btn-more {
     background-color: var(--blue);
     border: none;
+    color: var(--white);
+
 }
 
 .btn-more:hover {
     background-color: var(--orange);
+    color: var(--white);
 }
 
 @media screen and (max-width: 768px) {
-    .article-odd, 
-    .article-even{
+
+    .article-odd,
+    .article-even {
         flex-direction: column;
         width: 100%;
     }
+
     .article-odd .article-img,
     .article-img {
         align-self: center;
         width: 100%;
-        margin:auto;
+        margin: auto;
     }
-.article-text {
-    margin: 0;
-}
-    
+
+    .article-text {
+        margin: 0;
+    }
+
 }

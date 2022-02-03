@@ -5,6 +5,10 @@
     justify-content: center;
 }
 
+.main-content svg {
+    width: 100%;
+}
+
 .carregar-mais {
     margin: 2%;
 }

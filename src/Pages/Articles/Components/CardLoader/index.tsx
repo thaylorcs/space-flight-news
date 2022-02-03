@@ -1,4 +1,3 @@
-import React from "react"
 import ContentLoader from "react-content-loader";
 
 const CardLoader = () => {
@@ -14,8 +13,8 @@ const CardLoader = () => {
                     width={800}
                     height={290}
                     viewBox="0 0 400 150"
-                    backgroundColor="#ecebeb"
-                    foregroundColor="#d6d2d2"
+                    backgroundColor="#1e2022"
+                    foregroundColor="#fff"
                 >
                     <rect x="0" y="25" rx="0" ry="0" width="150" height="119" />
                     <rect x="190" y="30" rx="0" ry="0" width="240" height="25" />

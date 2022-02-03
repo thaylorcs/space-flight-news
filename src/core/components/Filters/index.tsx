@@ -8,8 +8,8 @@ type Props = {
 const Filters = ({ handleSortOrder }: Props) => {
 
     const sortOptions = [
-        { value: 'id', label: 'Mais antigas' },
-        { value: '', label: 'Mais novas' },
+        { value: 'id', label: 'Oldest' },
+        { value: '', label: 'Newest' },
     ];
 
     return (
@@ -17,9 +17,9 @@ const Filters = ({ handleSortOrder }: Props) => {
             <div className="form-group filters">
                 <Select
                     classNamePrefix="filter-select"
-                    placeholder={"Ordenar por"}
+                    placeholder={"Sort By"}
                     options={sortOptions}
-                    defaultValue={{ label: "Mais novas", value: '' }}
+                    defaultValue={{ label: "Newest", value: '' }}
                     onChange={event => handleSortOrder(event!.value)}
                 />
             </div>
