@@ -20,3 +20,13 @@
 .modal-body {
     display: flex;
 }
+
+@media screen and (max-width: 768px) {
+    .modal-dialog {
+        max-width: 95%;
+    }
+
+    .modal-body {
+        flex-direction: column;
+    }
+}
