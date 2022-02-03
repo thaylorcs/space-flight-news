@@ -12,3 +12,9 @@
     display: flex;
     justify-content: flex-end;
 }
+
+@media screen and (max-width: 768px) {
+    .top-filters {
+        right: 0.2%;
+    }
+}
