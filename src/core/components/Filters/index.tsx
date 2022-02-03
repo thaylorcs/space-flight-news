@@ -14,12 +14,11 @@ const Filters = ({ handleSortOrder }: Props) => {
 
     return (
         <div className="container top-filters">
-            <div className="form-group filters">
+            <div className="form-group ">
                 <Select
                     classNamePrefix="filter-select"
                     placeholder={"Sort By"}
                     options={sortOptions}
-                    defaultValue={{ label: "Newest", value: '' }}
                     onChange={event => handleSortOrder(event!.value)}
                 />
             </div>

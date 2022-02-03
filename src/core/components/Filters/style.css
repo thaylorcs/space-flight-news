@@ -8,13 +8,22 @@
     padding-top: 2%;
 }
 
-.filters {
-    display: flex;
-    justify-content: flex-end;
+.filter-select__indicators,
+.filter-select__value-container,
+.filter-select__menu-list,
+.filter-select__value-container--has-value,
+.filter-select__single-value,
+.filter-select__input {
+    background-color: var(--black);
+    color: #c2c2c2 !important;
+}
+
+.filter-select__menu-list {
+    border: 1px solid grey;
 }
 
 @media screen and (max-width: 768px) {
     .top-filters {
-        right: 0.2%;
+        right: 0.1%;
     }
 }
