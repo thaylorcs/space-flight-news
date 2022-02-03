@@ -45,8 +45,8 @@ const Articles = () => {
                         <ArticleCard article={article} key={article.id} />
                     ))
                 )}
-                <button onClick={loadMore} className="btn btn-primary carregar-mais">
-                    Carregar Mais
+                <button onClick={loadMore} className="btn btn-primary load-more">
+                    Load More
                 </button>
             </main >
         </>

@@ -9,8 +9,10 @@
     width: 100%;
 }
 
-.carregar-mais {
+.load-more {
+    background-color: var(--blue);
     margin: 2%;
+    border: none;
 }
 
 @media screen and (max-width: 768px) {
