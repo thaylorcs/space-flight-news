@@ -1,5 +1,4 @@
 # Space Flight News  
-
 This project is a coding challenge from [Coodesh](http://www.coodesh.com)
 ## Technologies Used:
 - React JS
